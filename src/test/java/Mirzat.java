@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 
-public class MGMResortsAssert {
+public class Mirzat {
 
     WebDriver driver;
 

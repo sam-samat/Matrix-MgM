@@ -15,6 +15,7 @@ public class Oleksandr {
 
     @BeforeMethod
     public void setUp() {
+        //Test 1;
 
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();

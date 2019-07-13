@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="520e76df-9d9c-4d02-9a27-37cc0d99920f" name="Default Changelist" comment="" />
+    <list default="true" id="520e76df-9d9c-4d02-9a27-37cc0d99920f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/test/java/Oleksandr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Oleksandr.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,8 +21,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Oleksandr.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="795">
-              <caret line="53" column="9" lean-forward="true" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
+            <state relative-caret-position="420">
+              <caret line="28" column="42" lean-forward="true" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#345#346#0" expanded="true" />
@@ -51,6 +53,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubProjectSettings">
+    <option name="CREATE_PULL_REQUEST_DEFAULT_BRANCH" value="master" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_USER" value="Oleksandr85" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_NAME" value="Matrix-MgM" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -66,8 +73,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="129" />
-    <option name="y" value="127" />
+    <option name="x" value="144" />
+    <option name="y" value="48" />
     <option name="width" value="1400" />
     <option name="height" value="923" />
   </component>
@@ -160,7 +167,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="129" y="127" width="1400" height="923" extended-state="0" />
+    <frame x="144" y="48" width="1400" height="923" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
@@ -211,8 +218,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Oleksandr.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="53" column="9" lean-forward="true" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
+        <state relative-caret-position="420">
+          <caret line="28" column="42" lean-forward="true" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#345#346#0" expanded="true" />

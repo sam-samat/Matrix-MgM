@@ -34,7 +34,7 @@ public class Yordanos {
     }
     @Test(priority = 1)
     public void buttonsVerificationTest() {
-        //Locating the all regions button
+        //Locating the all regions button.
         WebElement allRegionsText = driver.findElement(By.id("filter-1-btn"));
         //allRegionsText.getText();
         String actualAllRegionText = "All Regions";

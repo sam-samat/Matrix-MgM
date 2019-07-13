@@ -34,33 +34,30 @@ public class Mintesnot {
     }
 
     @Test
-    public void searchEntertainmentFunctionality() throws InterruptedException {
+    public void searchEntertainmentFunctionality(){
 
         WebElement searchEvents = driver.findElement(By.xpath("//input[@id='es-search-term']"));
         searchEvents.sendKeys("Concerts");
-//
-//        Thread.sleep(2000);
-
         WebElement cityDropDown = driver.findElement(By.xpath("//div[@id='search-location-drop']"));
         cityDropDown.click();
         WebElement lasVegas = driver.findElement(By.xpath("//li[@aria-label='Mississippi']/../li[1]"));
         lasVegas.click();
         String expectedCityName = "Las Vegas";
-        Assert.assertTrue(lasVegas.getText().contains(expectedCityName), "city name failed");
+        Assert.assertTrue(lasVegas.getText().contains(expectedCityName));
         WebElement subCityAllLasVegasFilter = driver.findElement(By.xpath("//li[@aria-label='Mississippi']/../li[1]//li[@aria-label='All Las Vegas']"));
         subCityAllLasVegasFilter.click();
         WebElement durationFilterSearch = driver.findElement(By.xpath("//div[@class='duration-search ']"));
         durationFilterSearch.click();
-       Assert.assertTrue(durationFilterSearch.getText().contains("View All Dates"), "date failed");
+       Assert.assertTrue(durationFilterSearch.getText().contains("View All Dates"));
         WebElement thisWeekendSearch = driver.findElement(By.xpath("//li[@aria-label=\"This Weekend\"]"));
         thisWeekendSearch.click();
         Thread.sleep(2000);
 
-        Assert.assertTrue(durationFilterSearch.getText().contains("This Weekend"), "this week failed");
+        Assert.assertTrue(durationFilterSearch.getText().contains("This Weekend"));
         WebElement search = driver.findElement(By.xpath("//div[@class='search-btn']"));
         search.click();
 
-        Assert.assertTrue(driver.getTitle().contains("Concerts"), "Concert failed");
+        Assert.assertTrue(driver.getTitle().contains("Concerts"));
 
     }
     @Test
@@ -69,18 +66,18 @@ public class Mintesnot {
         WebElement pentatonixConcertDiscription=driver.findElement(By.xpath("//div[@ng-show='searchResult.showSearchResult']/div[2]/div[2]"));
         String availableDatesOfTheShow="Available Dates";
 
-        Assert.assertTrue(pentatonixConcertDiscription.getText().contains(availableDatesOfTheShow), "available date failed");
+        Assert.assertTrue(pentatonixConcertDiscription.getText().contains(availableDatesOfTheShow));
 
         String ticketPrice="Tickets starting at";
-        Assert.assertTrue(pentatonixConcertDiscription.getText().contains(ticketPrice), "Price display failed");
+        Assert.assertTrue(pentatonixConcertDiscription.getText().contains(ticketPrice));
 
         String buyTicket="BUY TICKETS";
-        Assert.assertTrue(pentatonixConcertDiscription.getText().contains(buyTicket), "Buy TICKET failed");
+        Assert.assertTrue(pentatonixConcertDiscription.getText().contains(buyTicket));
 
         WebElement buyTicketButton= driver.findElement(By.xpath("//a[@href='https://www.mgmresorts.com/en/booking/show-booking.html#/show-listing&showFilter=postmodern-jukebox-1oak&arrive=07/05/2019']"));
         buyTicketButton.sendKeys(Keys.ENTER);
         String bookingPage="Show Booking - MGM Resorts";
-        Assert.assertTrue(driver.getTitle().contains(bookingPage), "Booking page failed");
+        Assert.assertTrue(driver.getTitle().contains(bookingPage));
         driver.close();
 
     }

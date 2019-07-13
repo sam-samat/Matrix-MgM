@@ -18,9 +18,9 @@ import java.util.concurrent.TimeUnit;
 public class Gulaiym {
 
 
-    static WebDriver driver;
-    @BeforeMethod
+    WebDriver driver;
 
+    @BeforeMethod
     public void setUp() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
@@ -38,7 +38,7 @@ public class Gulaiym {
 
     @Test(priority = 1)
     public void checkingAllButtonsWeddingGroups()throws InterruptedException{
-
+        //All the button should be displayed.
 
         WebElement ConventionMeeting =driver.findElement(By.linkText("Convention & Meeting Venues"));
         Assert.assertTrue(ConventionMeeting.isDisplayed(),"Convention & Meeting Venues is not displayed " );

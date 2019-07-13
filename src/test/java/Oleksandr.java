@@ -54,7 +54,6 @@ public class Oleksandr {
         }
         return true;
     }
-
     public static boolean image2(WebDriver driver) {
         driver.get("https://www.mgmresorts.com/en.html");
         driver.findElement(By.id("nav-casino-4")).click();

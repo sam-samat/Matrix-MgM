@@ -16,7 +16,7 @@ public class Mehmet {
     WebDriver driver;
 
     @BeforeMethod
-    public void setUp(){
+    public void setUpps(){
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();

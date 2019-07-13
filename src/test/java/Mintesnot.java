@@ -34,13 +34,10 @@ public class Mintesnot {
     }
 
     @Test
-    public void searchEntertainmentFunctionality() throws InterruptedException {
+    public void searchEntertainmentFunctionality(){
 
         WebElement searchEvents = driver.findElement(By.xpath("//input[@id='es-search-term']"));
         searchEvents.sendKeys("Concerts");
-//
-//        Thread.sleep(2000);
-
         WebElement cityDropDown = driver.findElement(By.xpath("//div[@id='search-location-drop']"));
         cityDropDown.click();
         WebElement lasVegas = driver.findElement(By.xpath("//li[@aria-label='Mississippi']/../li[1]"));

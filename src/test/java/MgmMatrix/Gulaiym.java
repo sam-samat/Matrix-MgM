@@ -29,7 +29,7 @@ public class Gulaiym {
         WebElement groupsWeddings = driver.findElement(By.linkText("Groups & Weddings"));
         groupsWeddings.click();
     }
-
+//
     @AfterMethod
     public void tearDown(){
         driver.close();
